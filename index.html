@@ -1,0 +1,82 @@
+ <!DOCTYPE html bg-dark>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Trivia Masters</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+ <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.thesamhitaacademy.com/" target="_blank"><img src="nav-logo.png" height="45"></a>
+            <a class="navbar-brand" href="#">Trivia Masters</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-rules" id="rules-btn" href="rules.html">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="highscores.html">Highscores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    </header>
+    <div class="container1">
+        <div id="home" class="flex-center flex-column">
+
+          <div class="myform">
+             <form action="game.html" method="get" class="form-api">
+                <h2 class="form-signin-heading text-warning">Trivia Masters</h2>
+                <br>
+                <label for="trivia_amount" >Number of Questions:</label>
+                <input type="number" name="amount" id="trivia_amount myQuestionCount" class="form-control amount-input" min="1" max="50" value="10">
+
+                <br>
+
+                <label for="trivia_category">Select Category: </label>
+                <select name="category" class="form-control " id="myFormControl">
+                      <option value="any">Any Category</option>
+                      <option value="9">General Knowledge</option><option value="10">Entertainment: Books</option><option value="11">Entertainment: Film</option><option value="12">Entertainment: Music</option><option value="13">Entertainment: Musicals &amp; Theatres</option><option value="14">Entertainment: Television</option><option value="15">Entertainment: Video Games</option><option value="16">Entertainment: Board Games</option><option value="17">Science &amp; Nature</option><option value="18">Science: Computers</option><option value="19">Science: Mathematics</option><option value="20">Mythology</option><option value="21">Sports</option><option value="22">Geography</option><option value="23">History</option><option value="24">Politics</option><option value="25">Art</option><option value="26">Celebrities</option><option value="27">Animals</option><option value="28">Vehicles</option><option value="29">Entertainment: Comics</option><option value="30">Science: Gadgets</option><option value="32">Entertainment: Cartoon &amp; Animations</option>		</select>
+
+                      <br>
+
+                <label for="trivia_difficulty">Select Difficulty: </label>
+                <select name="difficulty" class="form-control" id="myFormControl">
+                      <option value="any">Any Difficulty</option>
+                      <option value="easy">Easy</option>
+                      <option value="medium">Medium</option>
+                      <option value="hard">Hard</option>
+                </select>
+                  <br>
+                  <br>
+                    <button class="btn btn-lg btn-outline-success btn-block" type="submit">Play</button>
+             </form>
+            </div>
+          </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="game.js"></script>
+
+   </body>
+</html>

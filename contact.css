@@ -1,0 +1,24 @@
+#myimage{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 30px;
+    
+
+}
+
+#contact_info{
+
+    font-size: 25px;
+    color: #ffc107;
+    
+}
+
+.myImageColumn img {
+    bottom: 30px;
+    left: 200px;
+    margin-bottom: 20px;
+} 
+
