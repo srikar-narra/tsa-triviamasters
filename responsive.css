@@ -12,6 +12,14 @@
     top: 45%;
     left: 40%;
   }
+  
+  #saveScoreBtn {
+    width: 200px;
+  }
+
+  #gotohome {
+    width: 200px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -26,6 +34,14 @@
     position: absolute;
     top: 45%;
     left: 42%;
+  }
+  
+  #saveScoreBtn {
+    width: 200px;
+  }
+
+  #gotohome {
+    width: 200px;
   }
 
 }
@@ -124,6 +140,14 @@
     position: absolute;
     top: 45%;
     left: 43%;
+  }
+  
+  #saveScoreBtn {
+    width: 200px;
+  }
+
+  #gotohome {
+    width: 200px;
   }
 
 }
