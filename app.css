@@ -177,3 +177,9 @@ h3 {
 .rules .rules-text ul li h4{
   color: #ffc107;
 }
+
+/* Home Page play button top margin for firefox */
+#homeplay_btn {
+
+  margin-top: 8px;
+}
